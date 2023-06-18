@@ -2,4 +2,4 @@ Olá Jack! Esta é a minha contribuição para o teste prático correspondente a
 <br>
 Obrigado e um abraço!<br>
 ATT.<br>
-<h3>Lucas Monari
+<h3>Lucas Monari :)
