@@ -18,9 +18,9 @@ function Home(){
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>Author</th>
-                            <th>Action</th>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Ação</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -30,9 +30,9 @@ function Home(){
                           <td>{book.name}</td>
                           <td>{book.author}</td>
                           <td>
-                              <Link to={`/bookDetails/${book.id}`} className='btn btn-sm btn-info'>Info</Link>
-                              <Link to={`/edit/${book.id}`} className='btn btn-sm btn-primary ms-2'>Edit</Link>
-                              <button onClick={() => handleDelete(book.id)} className='btn btn-sm btn-danger ms-2'>Delete</button>
+                              <Link to={`/bookDetails/${book.id}`} className='btn btn-sm btn-info'>Sobre</Link>
+                              <Link to={`/edit/${book.id}`} className='btn btn-sm btn-primary ms-2'>Editar</Link>
+                              <button onClick={() => handleDelete(book.id)} className='btn btn-sm btn-danger ms-2'>Deletar</button>
                           </td>
                       </tr>
                     ))}
