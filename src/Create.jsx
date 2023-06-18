@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {addBook} from "./BookReducer.jsx";
 import {useDispatch, useSelector} from "react-redux";
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 function Create(){
     const [name, setName] = useState('')
@@ -21,7 +21,7 @@ function Create(){
 
     return(
         <div className='d-flex w-100 vh-100 justify-content-center align-items-center'>
-            <div className='w-50 bg-secondary text-white p-5'>
+            <div className='box w-50 bg-secondary text-white p-5'>
                 <h3>Cadastrar novo livro</h3>
                 <form onSubmit={handleSubmit}>
                     <div>
@@ -38,6 +38,7 @@ function Create(){
                         <input type="text" name='description' className='form-control' placeholder='Comentários?' onChange={e => setDescription(e.target.value)}/>
                     </div><br />
                     <button className='btn btn-info'>Cadastrar</button>
+                    <Link to='/' className='ms-5 btn btn-danger'>Cancelar</Link>
                 </form>
             </div>
         </div>

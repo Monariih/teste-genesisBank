@@ -13,20 +13,20 @@ function BookDetails(){
 
     return(
         <div className='d-flex w-auto vh-100 justify-content-center align-items-center'>
-            <div className='w-75 bg-secondary text-white p-5'>
+            <div className='box w-75 bg-secondary text-white p-5'>
                 <h3>Informações sobre: {name}</h3>
 
                     <div>
-                        <label htmlFor="name">Título: </label>
-                        <label>{name}</label>
+                        <label className='title' htmlFor="name">Título: </label>
+                        <label className='content'>{name}</label>
                     </div>
                     <div>
-                        <label htmlFor="author">Autor: </label>
-                        <label>{author}</label>
+                        <label className='title' htmlFor="author">Autor: </label>
+                        <label className='content'>{author}</label>
                     </div>
                     <div>
-                        <label htmlFor="description">Comentários:</label>
-                        <label className='text-wrap'>{description}</label>
+                        <label className='title' htmlFor="description">Comentários:</label>
+                        <label className='content'>{description}</label>
                     </div><br />
                     <Link to='/' className='btn btn-info'>Voltar</Link>
 

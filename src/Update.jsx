@@ -28,7 +28,7 @@ function Update() {
 
     return (
         <div className='d-flex w-100 vh-100 justify-content-center align-items-center'>
-            <div className='w-50 bg-secondary text-white p-5'>
+            <div className='box w-50 bg-secondary text-white p-5'>
                 <h3>Editar dados</h3>
                 <form onSubmit={handleUpdate}>
                     <div>
